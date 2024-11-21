@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD Perpustakaan</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Perpustakaan</h1>
+        <form id="bookForm">
+            <input type="hidden" id="bookId" value="">
+            <input type="text" id="bookTitle" placeholder="Judul Buku" required>
+            <input type="text" id="bookAuthor" placeholder="Penulis" required>
+            <button type="submit">Tambah / Update Buku</button>
+        </form>
+        <div id="bookList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
