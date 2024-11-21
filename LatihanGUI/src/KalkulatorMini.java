@@ -20,11 +20,12 @@ public class KalkulatorMini {
         frame.pack();
         frame.setVisible(true);
     }
+
     public KalkulatorMini() {
         akTambah.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double angka1, angka2,hasil;
+                double angka1, angka2, hasil;
 
                 angka1 = Double.parseDouble(tfAngka1.getText());
                 angka2 = Double.parseDouble(tfAngka2.getText());
@@ -37,7 +38,7 @@ public class KalkulatorMini {
         akKurang.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double angka1, angka2,hasil;
+                double angka1, angka2, hasil;
 
                 angka1 = Double.parseDouble(tfAngka1.getText());
                 angka2 = Double.parseDouble(tfAngka2.getText());
@@ -50,7 +51,7 @@ public class KalkulatorMini {
         akKali.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double angka1, angka2,hasil;
+                double angka1, angka2, hasil;
 
                 angka1 = Double.parseDouble(tfAngka1.getText());
                 angka2 = Double.parseDouble(tfAngka2.getText());
@@ -76,15 +77,15 @@ public class KalkulatorMini {
         akPersen.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double angka1, angka2,hasil1,hasil2;
+                double angka1, angka2, hasil1, hasil2;
 
                 angka1 = Double.parseDouble(tfAngka1.getText());
                 angka2 = Double.parseDouble(tfAngka2.getText());
 
-                hasil1 = angka1/100;
-                hasil2 = angka2/100;
+                hasil1 = angka1 / 100;
+                hasil2 = angka2 / 100;
 
-                tfHasil.setText("Angka 1 : "+hasil1 +"% dan Angka 2 : "+ hasil2 +"%");
+                tfHasil.setText("Angka 1 : " + hasil1 + "% dan Angka 2 : " + hasil2 + "%");
             }
         });
     }
